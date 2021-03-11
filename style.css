@@ -1,13 +1,55 @@
-h1{
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 600% 600%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#main {
+    padding: 1rem;
+    height: auto;
+    display: none;
+    background: none;
+    opacity: .8;
     text-align: center;
 }
-#buttons {
+
+h1 {
     text-align: center;
-    
 }
-  
-button {
-    display: inline-block;
-    font-size: 16px;
-    padding: 15px 30px;
+
+.drink-container {
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+#drink-list{
+    list-style-type: none;
+}
+
+.favorite-drink-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
 }
